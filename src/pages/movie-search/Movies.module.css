@@ -1,0 +1,57 @@
+.container {
+  padding: 28px;
+  padding-left: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-shadow: 1px 1px 0px blue;
+}
+form {
+  background-color: #c7e3f8;
+  border-radius: 4px;
+  width: 50%;
+  padding: 10px;
+}
+
+input {
+  border-radius: 2px;
+  padding: 6px;
+  border-left: none;
+  border-top: none;
+  border-bottom-color: #2196f3;
+  border-right-color: #2196f3;
+  width: 30%;
+}
+ul {
+  padding-left: 0px;
+}
+.submitBtn {
+  padding: 6px;
+  width: 80px;
+  margin-left: 5px;
+  border-radius: 3px;
+  font-size: 15px;
+  border: transparent;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submitBtn:hover,
+.submitBtn:focus {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+}
+.movieList {
+  font-style: italic;
+  padding: 5px;
+}
+.navLink {
+  text-decoration-line: none;
+  font-size: 20px;
+}

@@ -1,0 +1,36 @@
+ul {
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-style: italic;
+  padding-left: 36px;
+}
+.title {
+  text-shadow: 1px 1px 0px blue;
+  background-color: #c7e3f8;
+  border-radius: 4px;
+  width: 50%;
+  padding: 10px;
+}
+.navLink {
+  text-decoration-line: none;
+}
+
+.list a:hover {
+  cursor: pointer;
+  color: black;
+  text-shadow: 0 5px 4px rgba(18, 109, 237, 0.1);
+}
+.list {
+  font-size: 20px;
+}
+.loading {
+  display: flex;
+  padding: 50px;
+  font-size: 30px;
+  text-shadow: 0 5px 4px rgba(18, 109, 237, 0.1);
+}
