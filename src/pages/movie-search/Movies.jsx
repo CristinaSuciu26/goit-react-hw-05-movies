@@ -21,7 +21,6 @@ const Movies = ({ value = '', onSubmit }) => {
     try {
       const results = await handleSearch(inputValue);
       setSearchResults(results);
-      console.log('Search Results:', results);
     } catch (error) {
       console.error('Error searching movies:', error);
     }

@@ -15,7 +15,6 @@ const Home = () => {
         const movies = await fetchTrendingMovies();
         setFilms(movies);
         setLoading(false);
-        console.log('Films after state update:', movies);
       } catch (error) {
         console.error('Error fetching movies', error);
         setLoading(false);
