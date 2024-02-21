@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { handleSearch } from '../../services/Api';
 import styles from './Movies.module.css';
 
 const Movies = ({ value = '', onSubmit }) => {
   const [inputValue, setInputValue] = useState(value);
   const [searchResults, setSearchResults] = useState();
-  const navigate = useNavigate();
 
   useEffect(() => {
     setInputValue(value);
