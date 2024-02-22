@@ -5,6 +5,7 @@ import MovieDetails from '../pages/movie-details/MovieDetails.jsx';
 import SharedLayout from '../pages/shared-layout/SharedLayout.jsx';
 import NotFoundPage from '../pages/not-found/NotFound.jsx';
 import { Suspense, lazy } from 'react';
+import Loader from '../pages/loader/Loader.jsx';
 
 const Cast = lazy(() => import('../pages/movie-details/cast/Cast.jsx'));
 const Reviews = lazy(() =>
@@ -22,7 +23,7 @@ export const App = () => {
         <Route
           path="cast"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loader />}>
               <Cast />
             </Suspense>
           }
@@ -30,7 +31,7 @@ export const App = () => {
         <Route
           path="reviews"
           element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loader />}>
               <Reviews />
             </Suspense>
           }
