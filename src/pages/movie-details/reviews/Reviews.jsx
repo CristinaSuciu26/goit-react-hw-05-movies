@@ -31,7 +31,7 @@ const Reviews = () => {
               <li key={review.id} className={styles.list}>
                 <div className={styles.author}>
                   {' '}
-                  <p>{review.author}</p>
+                  <p className={styles.authorName}>{review.author}</p>
                 </div>
 
                 <p>{review.content}</p>
