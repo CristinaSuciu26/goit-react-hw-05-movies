@@ -37,7 +37,7 @@ const Cast = () => {
                 alt={actor.original_name}
               />
               <div className={styles.castDetails}>
-                <p>{actor.name}</p>
+                <p className={styles.name}>{actor.name}</p>
                 <p>Character: {actor.character}</p>
               </div>
             </div>

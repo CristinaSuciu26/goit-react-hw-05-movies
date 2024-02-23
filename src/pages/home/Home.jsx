@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { fetchTrendingMovies } from 'services/Api';
 import styles from './Home.module.css';
+import Loader from 'pages/loader/Loader';
 
 const Home = () => {
   const [films, setFilms] = useState([]);
@@ -25,7 +26,11 @@ const Home = () => {
   }, [films]);
 
   if (loading) {
-    return <div className={styles.loading}>Loading...</div>;
+    return (
+      <div className={styles.loading}>
+        <Loader />
+      </div>
+    );
   }
 
   return (

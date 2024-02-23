@@ -40,7 +40,7 @@ const Movies = ({ value = '', onSubmit }) => {
           onChange={handleChange}
           placeholder="Search movies..."
         />
-        <button className={styles.submitBtn} type="submit">
+        <button className={styles.searchBtn} type="submit">
           Search
         </button>
       </form>

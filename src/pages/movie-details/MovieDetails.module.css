@@ -9,6 +9,9 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-top: 10px;
 }
 h1 {
   font-size: 25px;
@@ -64,6 +67,9 @@ span {
   border-radius: 5px;
   padding: 10px;
   color: rgb(12, 4, 61);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  cursor: pointer;
 }
 
 .navLink {
